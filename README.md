@@ -25,3 +25,22 @@ https://developer.android.com/
 
 + 终端：```flutter create (project name)```
 
+### 组件
+
+#### Container 容器组件
+
++ Alignment 属性
++ width
++ height
++ color
++ padding: const EdgeInsets.fromLTRB(10, 30, 0, 0),
++ margin: const EdgeInsets.all(10)
++ decoration
+```
+decoration: new BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Colors.blue,Colors.green,Colors.purple]
+                ),
+                border: Border.all(width: 2, color: Colors.black)
+              ),
+```

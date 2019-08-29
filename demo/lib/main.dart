@@ -11,18 +11,33 @@ class MyApp extends StatelessWidget {
       title: 'Text Widget',
       home: Scaffold(
         body: Center(
-          child: Text(
-            'Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter,',
-            textAlign: TextAlign.center,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: 16,
-              color: Color.fromARGB(255, 255, 125, 125),
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.solid
+          // child: Text(
+          //   'Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter,',
+          //   textAlign: TextAlign.center,
+          //   maxLines: 1,
+          //   overflow: TextOverflow.ellipsis,
+          //   style: TextStyle(
+          //     fontSize: 16,
+          //     color: Color.fromARGB(255, 255, 125, 125),
+          //     decoration: TextDecoration.underline,
+          //     decorationStyle: TextDecorationStyle.solid
+          //   ),
+          // ),
+          child: Container(
+              child: new Text('Hello Flutter', style: TextStyle(fontSize: 40)),
+              alignment: Alignment.topLeft,
+              width: 500,
+              height: 400,
+              // color: Colors.blue,
+              padding: const EdgeInsets.fromLTRB(10, 30, 0, 0),
+              margin: const EdgeInsets.all(10),
+              decoration: new BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Colors.blue,Colors.green,Colors.purple]
+                ),
+                border: Border.all(width: 2, color: Colors.black)
+              ),
             ),
-          ),
         ),
       ),
     );
