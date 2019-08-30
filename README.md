@@ -44,3 +44,15 @@ decoration: new BoxDecoration(
                 border: Border.all(width: 2, color: Colors.black)
               ),
 ```
+
+#### Image 组件
+
++ 插入图片的方式
+    - Image.asset()
+    - Image.file()
+    - Image.memory()
+    - Image.network()
+
++ fit 属性
+
++ repeat 属性

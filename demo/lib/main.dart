@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Text Widget',
       home: Scaffold(
         body: Center(
+          // ~ Text
           // child: Text(
           //   'Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter, Hello Widget, 你好 Flutter,',
           //   textAlign: TextAlign.center,
@@ -23,21 +24,32 @@ class MyApp extends StatelessWidget {
           //     decorationStyle: TextDecorationStyle.solid
           //   ),
           // ),
+
+          // ~ Container
+          // child: Container(
+          //   child: new Text('Hello Flutter', style: TextStyle(fontSize: 40)),
+          //   alignment: Alignment.topLeft,
+          //   width: 500,
+          //   height: 400,
+          //   // color: Colors.blue,
+          //   padding: const EdgeInsets.fromLTRB(10, 30, 0, 0),
+          //   margin: const EdgeInsets.all(10),
+          //   decoration: new BoxDecoration(
+          //       gradient: const LinearGradient(
+          //           colors: [Colors.blue, Colors.green, Colors.purple]),
+          //       border: Border.all(width: 2, color: Colors.black)),
+          // ),
+
+          // ~ Image
           child: Container(
-              child: new Text('Hello Flutter', style: TextStyle(fontSize: 40)),
-              alignment: Alignment.topLeft,
-              width: 500,
-              height: 400,
-              // color: Colors.blue,
-              padding: const EdgeInsets.fromLTRB(10, 30, 0, 0),
-              margin: const EdgeInsets.all(10),
-              decoration: new BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Colors.blue,Colors.green,Colors.purple]
-                ),
-                border: Border.all(width: 2, color: Colors.black)
+            child: Image.network(
+              'https://picsum.photos/250?image=9',
+              fit: BoxFit.contain
               ),
-            ),
+            color: Colors.black,
+            width: 300,
+            height: 200,
+          )
         ),
       ),
     );
