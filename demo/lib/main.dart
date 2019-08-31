@@ -41,14 +41,32 @@ class MyApp extends StatelessWidget {
           // ),
 
           // ~ Image
-          child: Container(
-            child: Image.network(
-              'https://picsum.photos/250?image=9',
-              fit: BoxFit.contain
+          // child: Container(
+          //   child: Image.network(
+          //     'https://picsum.photos/250?image=9',
+          //     fit: BoxFit.contain
+          //     ),
+          //   color: Colors.black,
+          //   width: 300,
+          //   height: 200,
+          // )
+
+          // ~ ListView
+          child: new ListView(
+            children: <Widget>[
+              new ListTile(
+                leading: new Icon(Icons.access_alarm),
+                title: new Text('access_alarm')
               ),
-            color: Colors.black,
-            width: 300,
-            height: 200,
+              new ListTile(
+                leading: new Icon(Icons.account_box),
+                title: new Text('account_box')
+              ),
+               new ListTile(
+                leading: new Icon(Icons.airplanemode_active),
+                title: new Text('airplanemode_active')
+              ),
+            ],
           )
         ),
       ),
